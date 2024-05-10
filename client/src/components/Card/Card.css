@@ -1,0 +1,107 @@
+#reset {
+    all: initial;
+}
+
+
+.movie-list .card {
+    width: 98vw;
+    display: block;
+}
+
+.movie-list .card ul {
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    overflow-y: hidden;
+    list-style: none;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.movie-list .card li {
+    flex: 1;
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    margin-right: 1px;
+    max-width: 250px;
+    max-height: 200px;
+    height: auto;
+    width: auto;
+    object-fit: cover
+}
+
+.movie-list .card li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.card li a:hover {
+    transform: scale(1.1);
+}
+
+.card p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #222222;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ececec;
+    opacity: 0.5;
+    border: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.result-list .card {
+    width: 100vw;
+    display: block;
+    background-color: black;
+}
+
+.result-list .card ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.result-list .card li {
+    float: left;    
+}
+
+
+.result-list .card li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
